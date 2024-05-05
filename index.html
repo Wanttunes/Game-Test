@@ -7,39 +7,38 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <main>
-    <header>
-        <h1 id="Netflix">NETFLIX</h1>
-    </header>
-        <section>
-            <div>
-                <h1>Entrar</h1>
-            </div>
-            <div>
-                <form action="" autocomplete="on">
-                    <input type="text" name="user" id="iuser" placeholder="Email ou número de celular" required minlength="9"> <br>
-                    <input type="password" name="senha" id="isenha" placeholder="Senha" required minlength="6">
-                </form>
-                <button type="submit" id="entrar"> Entrar</button>
+    <div id="image">
+        <header id="logo"><h1><a href="#">NETFLIX</a></h1></header>
+        <div>
+            <header>Entrar</header>
+            <form action="" method="post">
+                <input type="text" placeholder="Email ou número de celular"><br>
+                <input type="password" placeholder="Senha"> <br>
+                <input type="button" value="Entrar" id="entrar"> 
                 <p id="ou">OU</p>
-                <button type="button" id="usarc">Usar um código de acesso</button>
-                <p id="esqueceud"><a href="#">Esqueceu a senha?</a></p>
-                <input type="checkbox" name="remember" id="iremember" ><label for="iremember" id="iremember">Lembre-se de mim</label>
-                <p>Novo por aqui? <a href="#">Assine agora.</a></p>
+                <input type="button" value="Usar um código de acesso" id="acesscode"> <br>
+                <a href="#" id="forgets">Esqueceu a senha?</a>
+            </form>
+            <footer>
+                <input type="checkbox" name="remember" id="iremember">
+                <label for="iremember">Lembre-se de mim</label>
+                <p>Novo por aqui? <a href="#">Assine agora</a>.</p>
+                <p id="aviso">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a> </p>
+            </footer>
+        </div>
+        <footer>
+            <p>Dúvidas? Ligue <a href="#">0800 591 2876</a></p>
+            <div id="itens">
+                <ul >
+                    <li><a href="#">Perguntas frequentes</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Preferências de cookies</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Informações corporativas</a></li>
+                </ul>
             </div>
-        </section>
-    <footer>
-        <p>Dúvidas? Ligue <a href="#">0800 591 2876</a></p>
-        <ul>
-            <li><a href="#">Perguntas frequentes</a></li>    
-            <li><a href="#">Central de Ajuda</a></li>
-            <li><a href="#">Termos de Uso</a></li>
-            <li><a href="#">Privacidade</a></li>
-            <li><a href="#">Preferências de cookies</a></li>
-            <li><a href="#">Informações corporativas</a></li>
-        </ul>
-        @Wanttunes
-    </footer>
-    </main>
+        </footer>
+    </div>
 </body>
 </html>

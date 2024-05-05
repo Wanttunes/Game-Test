@@ -4,113 +4,117 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 body{
-    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1192,h_670,q_70,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs) black no-repeat fixed;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-color: black;
 }
-main{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.384);
-    width: 100vw;
-    height: 130vh;
+#logo{
+    color: rgb(229,9,20);
+    margin: 20px 10px;
+    font-size: 0.8em;
 }
-a{
+#logo > h1 > a{
+    color: rgb(229,9,20);
+}
+div{
+    margin: 10px;
+}
+div > header{
     color: white;
-    text-decoration: none;
-
-}
-p{
-    color:rgb(187, 187, 187)
-}
-#Netflix{
-    color: rgb(229, 9, 20);
-    margin: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 22px;
+    font-size: 1.8em;
     font-weight: bold;
-    text-shadow: 4px 4px 5px black;
-}
-section{
-    position: relative;
-    left: 15%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.726);
-    width: 450px;
-    height: 685px;
-}
-section > div{
-    color: white;
-    font-size: 1.2em;
-    position: relative;
-    top: 40px;
-    right: 120px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-section > div > button{
-    position: relative;
-    margin-top: 20px;
-    left: 25%;
-    width: 300px;
-    height: 40px;
-    font-size: 0.8em;
-    border: none;
-    border-radius: 5px;
-}
-#entrar{
-    background-color: rgb(229, 9, 20);
-    color: white;
-}
-#entrar:hover{
-    cursor: pointer;
-    background-color: rgb(189, 6, 15);
-}
-#ou{
-    position: relative;
-    left: 25%;
-    top: 10px;
-    font-size: 16px;
-    margin: 5px;
-}
-#usarc{
-    background-color: rgba(102, 102, 102, 0.479);
-    color: white;
-}
-#usarc:hover{
-    cursor: pointer;
-    background-color: rgba(82, 81, 81, 0.479);
-}
-#esqueceud{
-    position: relative;
-    left: 25%;
-    font-size: 15px;
-    margin-top: 15px;
-}
-#esqueceud:hover > a:hover{
-    text-decoration: underline;
-    color: rgb(187, 187, 187);
-}
-#iremember, label#iremember{
-    position: relative;
-    left: 10%;
-    width: 20px;
-}
-input{
-    position: relative;
     margin-top: 30px;
-    left: 25%;
-    width: 300px;
-    height: 50px;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    font-size: 0.8em;
-    border: solid 1px rgb(129, 129, 129);
-    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-left: 6px;
 }
-footer{
-    position: absolute;
-    bottom: 0px;
-    background-color: rgba(0, 0, 0, 0.726);
-    width: 100vw;
-    height: 180px;
+div > form > input{
+    width: 98%;
+    height: 55px;
+    background-color: transparent;
+    color: #ffffff;
+    border: solid 1px rgba(136, 136, 136, 0.678);
+    border-radius: 5px;
+    margin: 8px;
+    font-size: 1em;
+}
+div > form > input:focus{
+    font-size: 1em;
+    font-variant-position: super;
+    outline: solid 2px white;
+}
+input#entrar{
+    color: white;
+    background-color: rgb(229,9,20);
+    height: 40px;
+    font-size: 1em;
+    border: none;
+}
+input#entrar:hover{
+    background-color: rgb(190, 10, 19);
+    cursor: pointer;
+}
+input#acesscode{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    border: none;
+    margin-bottom: 20px;
+}
+input#acesscode:hover{
+    background-color: rgb(37, 37, 37);
+    cursor: pointer;
+}
+p#ou{
+    color: rgb(175, 175, 175);
+    text-align: center;
+    margin: 10px;
+}
+#forgets{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 0px 37%;
+}
+#iremember{
+    margin-bottom: 20px;
+}
+div > footer{
+    color: white;
+    margin: 30px 10px;
+}
+div > footer > p{
+    color: rgb(175, 175, 175);
+}
+div > footer > p > a{
+    color: white;
+}
+div > footer > p > a:hover{
+    text-decoration: underline;
+}
+div > footer > p#aviso{
+    color: rgb(141, 141, 141);
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+div > footer > p#aviso > a{
+    color: rgb(47, 120, 255);
+}
+footer > p{
+    color: rgb(175, 175, 175);
+}
+#itens > ul > li{
+    display: inline;
+    margin: 10px;
+    padding: 58px;
+}
+#itens > ul > li > a{
+    color: rgb(175, 175, 175);
+    text-decoration: underline;
+    font-size: 0.8em;
 }
