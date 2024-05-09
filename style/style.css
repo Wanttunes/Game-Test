@@ -31,22 +31,55 @@ div > header{
     margin-bottom: 25px;
     margin-left: 6px;
 }
-div > form > input{
+.login{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.login > div{
+    width: 98%;
+    height: 55px;
+    background-color: rgba(58, 58, 58, 0.274);
+    color: #ffffff;
+    border: solid 0.1px rgba(138, 138, 138, 0.678);
+    border-radius: 5px;
+    margin: 8px;
+    font-size: 1em;
+}
+.login > div > input{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.login > div > input:focus{
+    font-size: 1em;
+    font-variant-position: super;
+    outline: solid 2px white;
+}
+#password{
+    margin-top: 20px;
+}
+.bottons{
+    width: 100%;
+    display: grid;
+    text-align: center;
+}
+.bottons > input{
     width: 98%;
     height: 55px;
     background-color: transparent;
     color: #ffffff;
     border: solid 1px rgba(136, 136, 136, 0.678);
     border-radius: 5px;
-    margin: 8px;
+    margin: 8px 0px;
     font-size: 1em;
 }
-div > form > input:focus{
-    font-size: 1em;
-    font-variant-position: super;
-    outline: solid 2px white;
-}
-input#entrar{
+div > input#entrar{
     color: white;
     background-color: rgb(229,9,20);
     height: 40px;
@@ -71,14 +104,14 @@ input#acesscode:hover{
 }
 p#ou{
     color: rgb(175, 175, 175);
-    text-align: center;
-    margin: 10px;
+    margin: 10px 0px;
+    width: 98%;
 }
 #forgets{
+    width: 98%;
     text-decoration: none;
     color: white;
     font-size: 14px;
-    margin-left: 33%;
 }
 #iremember{
     margin-bottom: 20px;
@@ -100,22 +133,25 @@ div > footer > p#aviso{
     color: rgb(141, 141, 141);
     font-size: 0.8em;
     margin-top: 20px;
-    margin-bottom: 150px;
+    margin-bottom: 110px;
 }
 div > footer > p#aviso > a{
     color: rgb(47, 120, 255);
 }
-footer > p{
+#text-n{
     color: rgb(175, 175, 175);
-    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+    font-size: 16px;
 }
-footer > p > a{
+#number{
     color: rgb(175, 175, 175);
 }
 #container{
     display: grid;
     justify-items: initial;
     margin: auto;
+    margin-bottom: 28px;
 }
 #itens{
     display: grid;
@@ -134,19 +170,31 @@ footer > p > a{
     font-size: 0.8em;
     justify-content: space-between;
 }
-footer > select{
-    box-sizing: content-box;
-    text-align: center;
-    font-size: 16px;
-    display: grid;
-    margin: 20px 10px;
-    padding: 0px 10px;
-    justify-items: initial;
-    background-color: transparent;
-    color: white;
-    border: solid 0.5px rgba(129, 129, 129, 0.692);
+#icon{
+    margin-left: 2px;
+}
+#container-select{
+    background-color: rgba(58, 58, 58, 0.274);
+    width: 140px;
+    height: 32px;
+    border: solid 1px rgba(255, 255, 255, 0.425);
     border-radius: 5px;
-    width: 120px;
-    height: 25px;
-
+    padding: 7px;
+}
+#select{
+    font-size: 15px;
+    margin-left: 5px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+.footer-top{
+    width: 100%;
+    margin: -10px;
+    border-top: 1px solid rgba(128,128,128,0.7);
+    padding-top: 20px;
+}
+.footer-normal{
+    margin: 20px;
+    padding-bottom: 10px;
 }

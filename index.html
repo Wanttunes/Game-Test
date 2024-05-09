@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ee0d9c7db4.js" crossorigin="anonymous"></script>
     <title>Netflix - Login</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -11,13 +12,18 @@
         <header id="logo"><h1><a href="#">NETFLIX</a></h1></header>
         <div>
             <header>Entrar</header>
-            <form action="" method="post">
-                <input type="text" placeholder="Email ou número de celular"><br>
-                <input type="password" placeholder="Senha"> <br>
-                <input type="button" value="Entrar" id="entrar"> 
-                <p id="ou">OU</p>
-                <input type="button" value="Usar um código de acesso" id="acesscode"> <br>
-                <a href="#" id="forgets">Esqueceu a senha?</a>
+            <form action="#" method="get">
+                <div class="login">
+                    <div id="Email">
+                    <input type="text" placeholder="Email ou número de celular"></div>
+                    <div id="password"><input type="password" placeholder="Senha"></div>
+                </div>
+                <div class="bottons">
+                    <input type="submit" value="Entrar" id="entrar">
+                    <p id="ou">OU</p>
+                    <input type="button" value="Usar um código de acesso" id="acesscode">
+                    <a href="#" id="forgets">Esqueceu a senha?</a>
+                </div>
             </form>
             <footer>
                 <input type="checkbox" name="remember" id="iremember">
@@ -26,26 +32,31 @@
                 <p id="aviso">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a> </p>
             </footer>
         </div>
-        <footer>
-            <p>Dúvidas? Ligue <a href="#">0800 591 2876</a></p>
-            <div id="container">
-                <div id="itens">
-                    <ul id="lista">
-                        <li><a href="#">Perguntas frequentes</a></li>
-                        <li><a href="#">Central de Ajuda</a></li>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Privacidade</a></li>
-                        <li><a href="#">Preferências de cookies</a></li>
-                        <li><a href="#">Informações corporativas</a></li>
-                    </ul>
+        <footer class="footer-top">
+            <footer class="footer-normal">
+                <p id="text-n">Dúvidas? Ligue <a href="#" id="number">0800 591 2876</a></p>
+                <div id="container">
+                    <div id="itens">
+                        <ul id="lista">
+                            <li><a href="#">Perguntas frequentes</a></li>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Privacidade</a></li>
+                            <li><a href="#">Preferências de cookies</a></li>
+                            <li><a href="#">Informações corporativas</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <select>
-                <i class="fa-solid fa-language"></i>
-                <option value="Português" selected>Português</option>
-                <option value="Inglês">English</option>
-            </select>
+                <div id="container-select">
+                    <i class="fa-solid fa-language" style="color: #ffffff;" id="icon"></i>
+                    <select id="select">
+                        <option value="Português" selected>Português</option>
+                        <option value="Inglês">English</option>
+                    </select>
+                </div>
+            </footer>
         </footer>
     </div>
+
 </body>
 </html>
