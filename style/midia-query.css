@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px){
+    
+    body{
+        background: url(https://assets.nflxext.com/ffe/siteui/vlv3/ff5587c5-1052-47cf-974b-a97e3b4f0656/d36987d2-6840-46a6-ae02-c37a32878946/BR-pt-20240506-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+        overflow-x: hidden;
+    }
+    div#full{
+        background-color: rgba(0, 0, 0, 0.514);
+        width: 100%;
+        height: 875px;
+    }
+    #logo{
+        margin-bottom: -10px;
+    }
+    #image{
+        background-color: rgba(0, 0, 0, 0.678);
+        width: 450px;
+        height: 750px;
+        margin: auto;
+        padding: 0px 60px;
+        margin-top: 15px;
+    }
+    .login{
+        width: 100%;
+        height: 100%;
+        margin: -8px;
+        margin-bottom: 5px;
+    }
+    #hentrar{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-left: 0px;
+    }
+    .footer-top{
+        margin-top: 50px;
+        display: grid;
+        background-color: rgba(0, 0, 0, 0.840);
+        width: 104%;
+        border: none;
+        padding-top: 0px;
+    }
+    .footer-normal{
+        margin: 10px;
+    }
+    #text-n{
+        padding-bottom: 10px;
+        font-size: 15.5px;
+    }
+    #lista{
+        
+        font-size: 16.5px;
+    }
+    #container{
+        padding-left: 10px;
+    }
+    #container-select{
+        margin-left: 10px;
+        margin-bottom: 6px;
+    }
+}
+@media screen and (min-width: 960px){
+    #logo{
+        font-size: 19px;
+    }
+    div#full{
+        height: 890px;
+    }
+}
